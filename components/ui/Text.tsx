@@ -21,9 +21,7 @@ const textVariants = cva("", {
 interface TextProps
   extends React.HtmlHTMLAttributes<HTMLParagraphElement>,
     VariantProps<typeof textVariants> {
-  children: React.ReactNode;
   as?: "p" | "span" | "div";
-  className?: string;
 }
 
 export const Text = React.forwardRef<HTMLParagraphElement, TextProps>(

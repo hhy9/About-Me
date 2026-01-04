@@ -22,9 +22,7 @@ const headingVariants = cva(
 //SEO: 구글은 HTML 태그를 봄 (h1, h2 순서 중요)
 // ✅ onClick, onMouseEnter 등 모든 HTML 속성 지원
 interface HeadingProps extends React.HtmlHTMLAttributes<HTMLHeadingElement>,VariantProps<typeof headingVariants> {
-  children: React.ReactNode;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"; //~로서(시멘틱태그)
-  className?: string;
 }
 
 export const Heading = React.forwardRef<HTMLHeadingElement,HeadingProps>(({
