@@ -15,10 +15,11 @@ import { Text } from "./Text";
 //           title="Freelance Frontend Developer"
 //           location="Remote"
 //         />
-interface TimelineItemProps {
+export interface TimelineItemProps {
   period: string;
   title: string;
   subtitle?: string;
+  works?: string[];
   descriptions?: string[];
 }
 
@@ -26,6 +27,7 @@ export const TimeLineItem = ({
   period,
   title,
   subtitle,
+  works = [],
   descriptions = [],
 }: TimelineItemProps) => {
   return (
@@ -42,17 +44,29 @@ export const TimeLineItem = ({
         </Heading>
         
         {subtitle && (
-          <Text variant="muted" className="text-sm">
+          <Text variant="muted" className="text-sm text-gray-600 font-medium">
             {subtitle}
           </Text>
+        )}
+
+        {works.length > 0 && (
+          <ul className="mt-1 space-y-1">
+            {works.map((work, index) => (
+              <li key={index}>
+                <Text variant="muted" className="text-sm text-gray-600">
+                  - {work}
+                </Text>
+              </li>
+            ))}
+          </ul>
         )}
         
         {descriptions.length > 0 && (
           <ul className="mt-1 space-y-1">
             {descriptions.map((desc, index) => (
               <li key={index}>
-                <Text variant="muted" className="text-sm">
-                  - {desc}
+                <Text variant="muted" className="text-sm text-gray-500">
+                  {desc}
                 </Text>
               </li>
             ))}

@@ -1,4 +1,5 @@
 import AboutSection from "@/components/sections/AboutSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { Container } from "@/components/ui/Contatiner";
 import { Stack } from "@/components/ui/Stack";
@@ -11,6 +12,7 @@ export default function Home() {
         <Stack gap="12">
           <HeroSection />
           <AboutSection />
+          <ExperienceSection />
         </Stack>
       </Container>
     </>
