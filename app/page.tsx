@@ -1,9 +1,11 @@
 import AboutSection from "@/components/sections/AboutSection";
+import ContactSection from "@/components/sections/ContactSection";
+import EducationSection from "@/components/sections/EducationSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { Container } from "@/components/ui/Contatiner";
 import { Stack } from "@/components/ui/Stack";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
           <HeroSection />
           <AboutSection />
           <ExperienceSection />
+          <EducationSection />
+          <ContactSection />
         </Stack>
       </Container>
     </>

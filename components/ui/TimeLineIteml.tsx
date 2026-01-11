@@ -2,19 +2,6 @@ import { Heading } from "./Heading";
 import { Stack } from "./Stack";
 import { Text } from "./Text";
 
-// <TimelineItem
-//           year="2023 — Now"
-//           title="Frontend Developer at 물류회사"
-//           subtitle="Entrix TMS 개발"
-//           location="서울, 한국"
-//           href="https://company.com"
-//         />
-        
-//         <TimelineItem
-//           year="2022 — 2023"
-//           title="Freelance Frontend Developer"
-//           location="Remote"
-//         />
 export interface TimelineItemProps {
   period: string;
   title: string;
