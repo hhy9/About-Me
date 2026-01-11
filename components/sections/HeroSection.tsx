@@ -1,4 +1,4 @@
-import Image from "@/node_modules/next/image";
+import Image from "next/image";
 import { Heading } from "../ui/Heading";
 import { Stack } from "../ui/Stack";
 import { Text } from "../ui/Text";

@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { cva } from "@/node_modules/class-variance-authority/dist/index";
 import React from "react";
 // Tailwind gap 값
 // gap-1  // 0.25rem = 4px

@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  cva,
-  VariantProps,
-} from "@/node_modules/class-variance-authority/dist/index";
+import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const textVariants = cva("", {

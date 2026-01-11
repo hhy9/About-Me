@@ -1,6 +1,6 @@
-import { cva, VariantProps } from "@/node_modules/class-variance-authority/dist/index";
 import React from "react";
 import { cn } from "@/lib/utils"
+import { cva, VariantProps } from "class-variance-authority";
 
 const headingVariants = cva(
     //베이스 스타일 (항상 적용)
