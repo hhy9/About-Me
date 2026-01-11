@@ -9,7 +9,7 @@ export default function HeroSection() {
       <section className="flex items-center gap-5">
         <div className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
           <Image
-            src={"/img/test3.jpeg"}
+            src={"/me.jpg"}
             alt="profile"
             fill
             priority
